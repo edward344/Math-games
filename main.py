@@ -20,6 +20,10 @@ def main():
     clock = pygame.time.Clock()
     # Create game object
     game = Game()
+    # Added cute background music courtesy of bensound!
+    pygame.mixer.music.load("bensound-cute.mp3") 
+    pygame.mixer.music.play(-1, 0)
+    pygame.mixer.music.set_volume(0.1)
     # -------- Main Program Loop -----------
     while not done:
         # --- Process events (keystrokes, mouse clicks, etc)
